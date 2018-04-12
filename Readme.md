@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [VLADIMIR ILYIN](https://up.htmlacademy.ru/adaptive/14/user/610629).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://up.htmlacademy.ru/adaptive/14/user/252055).
 
 ---
 
