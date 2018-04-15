@@ -42,44 +42,47 @@
         <p>Оставьте отзыв о них, а также о посещеных вами достопримечательностях</p>
       </div>
       <form class="page-form__form" action="https://echo.htmlacademy.ru" method="POST">
-      <fieldset class="page-form__introduction">
-        <legend>Представьтесь:</legend>
-        <label for="yourname">Имя</label>
-        <input id="yourname" type="text" name="yourname" value="" placeholder="Петр" required>
-        <label for="surname">Фамилия</label>
-        <input id="surname" type="text" name="surname" value="" placeholder="Иванов" required>
-        <label for="patronymic">Отчество</label>
-        <input id="patronymic" type="text" name="patronymic" value="" placeholder="Александрович" required>
-      </fieldset>
-      <fieldset class="page-form__contactinfo">
-        <legend>Контактная информация:</legend>
-        <label for="phonenumber">Контактный телефон:</label>
-        <input id="phonenumber" type="tel" name="phonenumber" value="" placeholder="Введите телефон" required>
-        <label for="email">Электронная почта:</label>
-        <input id="email" type="email" name="email" value="" placeholder="Введите email" required>
-      </fieldset>
-      <fieldset class="page-form__impressions">
-        <legend>Ваше общее впечатление:</legend>
-        <input type="radio" name="impressions" value="Скорее положительное" checked>
-        <input type="radio" name="impressions" value="Скорее отрицательное">
-        <input type="radio" name="impressions" value="Затрудняюсь ответить">
-      </fieldset>
-      <fieldset class="page-form__sights">
-        <legend>Посещенные достопримечательности:</legend>
-        <input type="checkbox" id="bridge" name="bridge" checked>
-        <label for="bridge">Мост дьявола</label>
-        <input type="checkbox" id="mountain" name="mountain" checked>
-        <label for="mountain">Гора-Колокол</label>
-        <input type="checkbox" id="park" name="park" checked>
-        <label for="park">Слайд-парк</label>
-        <input type="checkbox" id="redrocks" name="redrocks">
-        <label for="redrocks">Красные скалы</label>
-      </fieldset>
-      <fieldset class="page-form__emotions">
-        <legend>Опишите свои эмоции:</legend>
-        <label for="emotions">Опишите подробно все свои восторги</label>
+      <section class="page-form__introduction">
+        <h2>Представьтесь:</h2>
+        <p><label for="yourname">Имя*</label>
+        <input id="yourname" type="text" name="yourname" value="" placeholder="Петр" required></p>
+        <p><label for="surname">Фамилия*</label>
+        <input id="surname" type="text" name="surname" value="" placeholder="Иванов" required></p>
+        <p><label for="patronymic">Отчество</label>
+        <input id="patronymic" type="text" name="patronymic" value="" placeholder="Александрович"></p>
+      </section>
+      <section class="page-form__contactinfo">
+        <h2>Контактная информация:</h2>
+        <p><label for="phonenumber">Контактный телефон:*</label></p>
+        <p><input id="phonenumber" type="tel" name="phonenumber" value="" placeholder="Введите телефон" required></p>
+        <p><label for="email">Электронная почта:*</label></p>
+        <p><input id="email" type="email" name="email" value="" placeholder="Введите email" required></p>
+      </section>
+      <section class="page-form__impressions">
+        <h2>Ваше общее впечатление:</h2>
+        <p><input type="radio" name="impressions-plus" value="" checked>
+            <label for="impressions-plus">Скорее положительное</label></p>
+        <p><input type="radio" name="impressions-minus" value="">
+            <label for="impressions-minus">Скорее отрицательное</label></p>
+        <p><input type="radio" name="impressions-none" value="">
+            <label for="impressions-none">Затрудняюсь ответить</label></p>
+      </section>
+      <section class="page-form__sights">
+        <h2>Посещенные достопримечательности:</h2>
+        <p><input type="checkbox" id="bridge" name="bridge" checked>
+        <label for="bridge">Мост дьявола</label></p>
+        <p><input type="checkbox" id="mountain" name="mountain" checked>
+        <label for="mountain">Гора-Колокол</label></p>
+        <p><input type="checkbox" id="park" name="park" checked>
+        <label for="park">Слайд-парк</label></p>
+        <p><input type="checkbox" id="redrocks" name="redrocks">
+       <label for="redrocks">Красные скалы</label></p>
+      </section>
+      <section class="page-form__emotions">
+        <h2>Опишите свои эмоции:</h2>
+        <p><label for="emotions">Опишите подробно все свои восторги</label></p>
         <textarea id="emotions" name="emotions" rows="10" cols="50"></textarea>
-      </fieldset>
+      </section>
       <button type="submit" class="page-form__button">Отправить отзыв</button>
       </form>
     </main>
@@ -88,7 +91,7 @@
         <a class="main-footer__contacts-button" href="#">#Visit Sedona</a>
       </div>
       <div class="main-footer__social social">
-        <ul class="social__list">
+       <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в ВКонтакте</a>
           </li>
