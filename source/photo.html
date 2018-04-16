@@ -3,101 +3,105 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
-
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+      <nav class="main-header__menu mobile-menu">
+        <ul class="mobile-menu__list mobile-list">
+          <li class="mobile-list__item">
             <a href="#">Главная</a>
+            <button class="mobile-menu__list button" type="button">Главное меню</button>
           </li>
-          <li class="site-list__item">
+          <li class="mobile-list__item">
             <a href="photo.html">Фото и видео</a>
           </li>
-          <li class="site-list__item">
+          <li class="mobile-list__item">
             <a href="form.html">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
+          <li class="mobile-list__item">
             <a href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="img/logo.png" width="138" height="70" alt="логотип Седона">
-      </a>
-      <button class="main-nav__toggle" type="button">Открыть</button>
+      <div class="main-header__menu logo-wrapper">
+          <a class="logo-wrapper__logo">
+            <img class="logo-wrapper__logo image" src="img/logo.png" width="138" height="70" alt="логотип Седона">
+          </a>
+          <button class="logo-wrapper__logo toggle" type="button">Открыть</button>
+      </div>
+      <section class="main-header__intro intro">
+          <div class="intro-title">
+            <img class="intro-title__image" src="img/text-sedona-index.svg" width="460" height="350" alt="Фото Седона">
+          </div>
+      </section>
     </header>
     <main class="page-photo">
-      <section class="page-photo__intro">
-        <h1 class="visually-hidden">Sedona</h1>
-        <div class="intro-title">
-          <img class="intro-title__image" src="img/text-sedona-index.svg" width="460" height="350" alt="Фото Седона">
-        </div>
-      </section>
       <section class="page-photo__content">
-        <h2>Фото и видео</h2>
+        <h1>Фото и видео</h1>
         <p>Не можете решиться на путешествие из-за курса?<br> Фотографии помогут вам забыть о политике и экономике</p>
         <ul class="page-photo__content content-list">
           <li class="content-list__item">
-            <img class="views" src="http://placehold.it/150x100">
+            <img src="http://placehold.it/150x100" alt="Неродные просторы">
             <h3>Неродные просторы</h3>
             <p>Автор фото: Борис</p>
+            <button class="page-photo__button button" type="button"></button>
+            <span>1350</span>
           </li>
           <li class="content-list__item">
-            <img class="forests" src="http://placehold.it/150x100">
+            <img src="http://placehold.it/150x100" alt="Местная растительность">
             <h3>Местная растительность</h3>
             <p>Автор фото: Сергей</p>
+            <button class="page-photo__button button" type="button"></button>
+            <span>143</span>
           </li>
           <li class="content-list__item">
-            <img class="roadtonorth" src="http://placehold.it/150x100">
+            <img src="http://placehold.it/150x100" alt="Дорога на север">
             <h3>Дорога на север</h3>
             <p>Автор фото: Петр</p>
+            <button class="page-photo__button button" type="button"></button>
+            <span>96</span>
           </li>
           <li class="content-list__item">
-            <img class="diabolobridge" src="http://placehold.it/150x100">
+            <img src="http://placehold.it/150x100" alt="Мост дьявола">
             <h3>Мост дьявола</h3>
             <p>Автор фото: Антон</p>
+            <button class="page-photo__button button" type="button"></button>
+            <span>254</span>
           </li>
         </ul>
       </section>
-      <section class="page-photo__invitation">
+      <section class="page-photo__invitation invitation">
         <h2>Все еще сомневаетесь?</h2>
         <p>Смотрите видеопрезентацию и скорее за билетами,<br> пока они не подорожали в очередной раз!</p>
-        <img class="photo-invitation" src="http://placehold.it/150x100">
-        <div class="scale">
-          <div class="bar"></div>
-          <div class="range-toggle range-toggle-min"></div>
-          <div class="range-toggle range-toggle-max"></div>
+        <img class="invitation__photo" src="http://placehold.it/150x100" alt="Приглашение в дорогу">
+        <div class="invitation__scale scale">
+          <div class="scale__bar"></div>
+          <div class="scale__bar range-toggle range-toggle-min"></div>
+          <div class="scale__bar range-toggle range-toggle-max"></div>
         </div>
-        <button class="button__one" type="submit"></button>
-        <button class="button__two" type="submit"></button>
-        <button class="button__three" type="submit"></button>
+        <button class="invitation__button back" type="submit"></button>
+        <button class="invitation__button play" type="submit"></button>
+        <button class="invitation__button full-screen" type="submit"></button>
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__contacts">
-        <a class="main-footer__contacts-button" href="#">#Visit Sedona</a>
-      </div>
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в ВКонтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-          </li>
-        </ul>
-      </div>
+      <b class="main-footer__contacts">#Visit Sedona</b>
+      <ul class="main-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в ВКонтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </li>
+      </ul>
       <div class="main-footer__copyright">
         <a class="main-footer__copyright--logo" href="https://htmlacademy.ru/intensive/htmlcss">
-        <span>Разработано:</span>
-        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="main-footer__copyright--logo">
-       </a>
+          <span>Разработано:</span>
+          <img class="main-footer__copyright--logo" src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии">
+        </a>
       </div>
     </footer>
   </body>
