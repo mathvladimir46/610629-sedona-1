@@ -7,34 +7,34 @@
   <body>
     <header class="main-header">
       <nav class="main-header__menu mobile-menu">
-        <a class="mobile-menu__logo">
+        <a href="index.html" class="mobile-menu__logo">
           <img class="mobile-menu__logo" src="img/logo.png" width="138" height="70" alt="логотип Седона">
         </a>
         <ul class="mobile-menu__list mobile-list">
-          <li class="mobile-list__link">
-            <a href="index.html">Главная</a>
+          <li class="mobile-list__item">
+            <a class="mobile-list__link" href="index.html">Главная</a>
           </li>
-          <li class="mobile-list__link">
-            <a href="photo.html">Фото и видео</a>
+          <li class="mobile-list__item">
+            <a class="mobile-list__link" href="photo.html">Фото и видео</a>
           </li>
-          <li class="mobile-list__link">
-            <a>Форма отзыва</a>
+          <li class="mobile-list__item">
+            <a class="mobile-list__link" href="#">Форма отзыва</a>
           </li>
-          <li class="mobile-list__link">
-            <a href="https://htmlacademy.ru">HTML Academy</a>
+          <li class="mobile-list__item">
+            <a class="mobile-list__link" href="https://htmlacademy.ru">HTML Academy</a>
           </li>
         </ul>
         <button class="mobile-menu__button" type="button">Открыть</button>
       </nav>
       <div class="main-header__intro">
-        <img class="main-header__intro" src="img/text-sedona-index.svg" width="460" height="350" alt="Фото Седона">
+        <img class="main-header__image" src="img/text-sedona-index.svg" width="460" height="350" alt="Фото Седона">
       </div>
     </header>
     <main class="page-form">
       <div class="page-form__request">
-        <h1>Оставьте свой отзыв</h1>
-        <p>Помогите нашим отелям стать лучше!</p>
-        <p>Оставьте отзыв о них, а также о посещеных вами достопримечательностях</p>
+        <h1 class="page-form__request--title">Оставьте свой отзыв</h1>
+        <p class="page-form__request--subtitle">Помогите нашим отелям стать лучше!</p>
+        <p class="page-form__request--subtitle">Оставьте отзыв о них, а также о посещеных вами достопримечательностях</p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="form__fieldset">
@@ -95,21 +95,21 @@
         </li>
       </ul>
       <div class="main-footer__copyright">
-        <a class="main-footer__copyright logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <span>Разработано:</span>
-          <img class="main-footer__copyright logo" src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии">
+        <a class="main-footer__copyright--logo" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="main-footer__copyright--text">Разработано:</span>
+          <img class="main-footer__copyright--image" src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии">
         </a>
       </div>
     </footer>
-    <section class="modal modal--failed">
-        <h2>Что-то пошло не так!</h2>
-        <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal__button button" type="button">ОК</button>
+    <section class="modal modal-failed">
+        <h2 class="modal-failed__title">Что-то пошло не так!</h2>
+        <p class="modal-failed__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-failed__button button" type="button">ОК</button>
       </section>
-      <section class="modal modal--success">
-        <h2>Ваш отзыв отправлен!</h2>
-        <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
-        <button class="modal__button button" type="button">Закрыть окно</button>
+      <section class="modal modal-success">
+        <h2 class="modal-success__title">Ваш отзыв отправлен!</h2>
+        <p class="modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
+        <button class="modal-success__button button" type="button">Закрыть окно</button>
       </section>
   </body>
 </html>
