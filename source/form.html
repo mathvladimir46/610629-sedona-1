@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-header__menu mobile-menu">
         <a href="index.html" class="mobile-menu__logo">
-          <img class="mobile-menu__logo" src="img/logo.png" width="138" height="70" alt="логотип Седона">
+          <img class="mobile-menu__image" src="img/logo.png" width="138" height="70" alt="логотип Седона">
         </a>
         <ul class="mobile-menu__list mobile-list">
           <li class="mobile-list__item">
@@ -32,51 +32,51 @@
     </header>
     <main class="page-form">
       <div class="page-form__request">
-        <h1 class="page-form__request--title">Оставьте свой отзыв</h1>
-        <p class="page-form__request--subtitle">Помогите нашим отелям стать лучше!</p>
-        <p class="page-form__request--subtitle">Оставьте отзыв о них, а также о посещеных вами достопримечательностях</p>
+        <h1 class="page-form__title">Оставьте свой отзыв</h1>
+        <p class="page-form__slogan">Помогите нашим отелям стать лучше!</p>
+        <p class="page-form__text">Оставьте отзыв о них, а также о посещеных вами достопримечательностях</p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="form__fieldset">
-          <legend>Представьтесь:</legend>
-          <p><label for="yourname">Имя*</label>
+          <legend class="fieldset__title">Представьтесь:</legend>
+          <p class="form__name"><label for="yourname">Имя*</label>
             <input id="yourname" type="text" name="yourname" value="" placeholder="Петр" required></p>
-          <p><label for="surname">Фамилия*</label>
+          <p class="form__surname"><label for="surname">Фамилия*</label>
             <input id="surname" type="text" name="surname" value="" placeholder="Иванов" required></p>
-          <p><label for="patronymic">Отчество</label>
+          <p class="form__patronymic"><label for="patronymic">Отчество</label>
             <input id="patronymic" type="text" name="patronymic" value="" placeholder="Александрович"></p>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend>Контактная информация:</legend>
-          <p><label for="phonenumber">Контактный телефон:*</label></p>
-          <p><input id="phonenumber" type="tel" name="phonenumber" value="" placeholder="Введите телефон" required></p>
-          <p><label for="email">Электронная почта:*</label></p>
-          <p><input id="email" type="email" name="email" value="" placeholder="Введите e-mail" required></p>
+          <legend class="fieldset__title">Контактная информация:</legend>
+          <p class="form__phonenumber-text"><label for="phonenumber">Контактный телефон:*</label></p>
+          <p class="form__phonenmber-number"><input id="phonenumber" type="tel" name="phonenumber" value="" placeholder="Введите телефон" required></p>
+          <p class="form__email-text"><label for="email">Электронная почта:*</label></p>
+          <p class="form__email-email"><input id="email" type="email" name="email" value="" placeholder="Введите e-mail" required></p>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend>Ваше общее впечатление:</legend>
-          <p><input type="radio" name="impressions" id="impressions-plus" value="" checked>
+          <legend class="fieldset__title">Ваше общее впечатление:</legend>
+          <p class="form__impressions_plus"><input type="radio" name="impressions" id="impressions-plus" value="" checked>
               <label for="impressions-plus">Скорее положительное</label></p>
-          <p><input type="radio" name="impressions" id="impressions-minus" value="">
+          <p class="form__impressions-minus"><input type="radio" name="impressions" id="impressions-minus" value="">
               <label for="impressions-minus">Скорее отрицательное</label></p>
-          <p><input type="radio" name="impressions" id="impressions-none" value="">
+          <p class="form__impressions-none"><input type="radio" name="impressions" id="impressions-none" value="">
               <label for="impressions-none">Затрудняюсь ответить</label></p>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend>Посещенные достопримечательности:</legend>
-          <p><input type="checkbox" id="bridge" name="bridge" checked>
+          <legend class="fieldset__title">Посещенные достопримечательности:</legend>
+          <p class="form__checkbox-bridge"><input type="checkbox" id="bridge" name="bridge" checked>
               <label for="bridge">Мост дьявола</label></p>
-          <p><input type="checkbox" id="mountain" name="mountain" checked>
+          <p class="form__checkbox-mountain"><input type="checkbox" id="mountain" name="mountain" checked>
               <label for="mountain">Гора-Колокол</label></p>
-          <p><input type="checkbox" id="park" name="park" checked>
+          <p class="form__checkbox-park"><input type="checkbox" id="park" name="park" checked>
               <label for="park">Слайд-парк</label></p>
-          <p><input type="checkbox" id="redrocks" name="redrocks">
+          <p class="form__checkbox-rocks"><input type="checkbox" id="redrocks" name="redrocks">
               <label for="redrocks">Красные скалы</label></p>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend>Опишите свои эмоции:</legend>
+          <legend class="fieldset__title">Опишите свои эмоции:</legend>
           <p><label for="emotions"></label></p>
-          <textarea id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги" rows="10" cols="50"></textarea>
+          <textarea class="form__emoutions-text" id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги" rows="10" cols="50"></textarea>
         </fieldset>
         <button type="submit" class="form__button button">Отправить отзыв</button>
       </form>
@@ -95,21 +95,21 @@
         </li>
       </ul>
       <div class="main-footer__copyright">
-        <a class="main-footer__copyright--logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <span class="main-footer__copyright--text">Разработано:</span>
-          <img class="main-footer__copyright--image" src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии">
+        <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="main-footer__text">Разработано:</span>
+          <img class="main-footer__image" src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии">
         </a>
       </div>
     </footer>
-    <section class="modal modal-failed">
-        <h2 class="modal-failed__title">Что-то пошло не так!</h2>
-        <p class="modal-failed__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal-failed__button button" type="button">ОК</button>
+    <section class="modal modal--failed">
+        <h2 class="modal__title">Что-то пошло не так!</h2>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal__button button-failed" type="button">ОК</button>
       </section>
-      <section class="modal modal-success">
-        <h2 class="modal-success__title">Ваш отзыв отправлен!</h2>
-        <p class="modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
-        <button class="modal-success__button button" type="button">Закрыть окно</button>
+      <section class="modal modal--success">
+        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
+        <button class="modal__button button-success" type="button">Закрыть окно</button>
       </section>
   </body>
 </html>
