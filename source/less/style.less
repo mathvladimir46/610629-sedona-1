@@ -1,6 +1,7 @@
 
 body {
   min-width: 320px;
+  background-color: red;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -8,20 +9,8 @@ body {
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
-  background-color: grey;
-
-
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
 @font-face {
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   src: url("ptsans.eot");
@@ -30,4 +19,8 @@ body {
    url("ptsans.woff") format("woff"),
    url("ptsans.ttf") format("truetype");
 }
-@import "blocks/header";
+
+@import "font";
+@import "visually-hidden";
+@import "main-header";
+@import "variables";
