@@ -35,7 +35,7 @@
            </button>
         </a>
       </nav>
-      <div class="main-header__intro">
+      <div class="main-header__intro--pages">
         <img class="main-header__image" src="img/text-sedona.svg" width="282" height="214" alt="Фото Седона">
       </div>
     </header>
@@ -85,23 +85,30 @@
       <section class="page-photo__invitation invitation">
         <h2 class="invitation__title">Все еще сомневаетесь?</h2>
         <p class="invitation__text">Смотрите видеопрезентацию и скорее за билетами,<br> пока они не подорожали в очередной раз!</p>
-        <video class="invitation__video" width="280" height="200" poster="img/video-mobile@1x.jpg">
+        <div class="page-photo__video">
+          <video class="invitation__video" width="280" height="200" poster="img/video-mobile@1x.jpg">
 
-        </video>
-        <div class="invitation__scale scale">
-          <div class="scale__bar"></div>
-          <div class="scale__bar range-toggle range-toggle--min"></div>
-          <div class="scale__bar range-toggle range-toggle--max"></div>
+          </video>
+          <div class="invitation__scale scale">
+            <div class="scale__wrapper">
+              <div class="scale__bar"></div>
+            </div>
+            <div class="scale__bar range-toggle range-toggle--min"></div>
+            <!--<div class="scale__bar range-toggle range-toggle--max"></div>-->
+
+            <div class="invitation__buttons-wrapper">
+              <button class="invitation__button button button--back" type="submit">
+                <img src="img/icon-video-replay.svg" alt="Повтор просмотра">
+              </button>
+              <button class="invitation__button button button--play" type="submit">
+                <img src="img/icon-video-subtitles.svg" alt="Подключить субтитры">
+              </button>
+              <button class="invitation__button button button--full-screen" type="submit">
+                <img src="img/icon-video-fullscreen.svg" alt="Полный экран">
+              </button>
+            </div>
+          </div>
         </div>
-        <button class="invitation__button button button--back" type="submit">
-            <img src="img/icon-video-replay.svg" alt="Повтор просмотра">
-        </button>
-        <button class="invitation__button button button--play" type="submit">
-            <img src="img/icon-video-subtitles.svg" alt="Подключить субтитры">
-        </button>
-        <button class="invitation__button button button--full-screen" type="submit">
-            <img src="img/icon-video-fullscreen.svg" alt="Полный экран">
-        </button>
       </section>
     </main>
     <footer class="main-footer">
