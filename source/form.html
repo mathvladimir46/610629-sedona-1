@@ -32,7 +32,7 @@
         <a href="index.html" class="mobile-menu__logo">
           <img class="mobile-menu__image" src="img/logo-sedona-mobile.svg" width="138" height="70" alt="логотип Седона">
            <button class="mobile-menu__button--open" type="button">
-             <img src="img/icon-menu.svg" alt="Открыть меню">
+             <img class="icon-menu" src="img/icon-menu.svg" alt="Открыть меню">
            </button>
         </a>
       </nav>
@@ -69,24 +69,56 @@
         </fieldset>
         <fieldset class="form__item impressions">
           <legend class="impressions__title">Ваше общее впечатление:</legend>
-          <p class="impressions__text"><input class="impressions__btn" type="radio" name="impressions" id="impressions-plus" value="" checked>
+          <div class="circle-wrapper">
+            <svg viewBox="0 0 30 30" class="box">
+                  <g>
+                    <circle cx="15" cy="15" r="15" fill="#f2f2f2"/>
+                    <circle cx="15" cy="15" r="5" fill="black"/>
+                  </g>
+              </svg>
+              <p class="impressions__text"><input class="visually-hidden" type="radio" name="impressions" id="impressions-plus" value="" checked>
               <label class="impressions__value" for="impressions-plus">Скорее положительное</label></p>
-          <p class="impressions__text"><input class="impressions__btn" type="radio" name="impressions" id="impressions-minus" value="">
+          </div>
+          <div class="circle-wrapper">
+              <svg viewBox="0 0 30 30" class="box">
+                    <g>
+                      <circle cx="15" cy="15" r="15" fill="#f2f2f2"/>
+                    </g>
+                </svg>
+              <p class="impressions__text"><input class="visually-hidden" type="radio" name="impressions" id="impressions-minus" value="">
               <label class="impressions__value" for="impressions-minus">Скорее отрицательное</label></p>
-          <p class="impressions__text"><input class="impressions__btn" type="radio" name="impressions" id="impressions-none" value="">
+          </div>
+          <div class="circle-wrapper">
+              <svg viewBox="0 0 30 30" class="box">
+                    <g>
+                      <circle cx="15" cy="15" r="15" fill="#f2f2f2"/>
+                    </g>
+              </svg>
+              <p class="impressions__text"><input class="visually-hidden" type="radio" name="impressions" id="impressions-none" value="">
               <label class="impressions__value" for="impressions-none">Затрудняюсь ответить</label></p>
+          </div>
         </fieldset>
         <fieldset class="form__item sights">
           <legend class="sights__title">Посещенные достопримечательности:</legend>
-          <p class="sights__text"><input class="sights__btn" type="checkbox" id="bridge" name="bridge" checked>
-              <label class="sights__name" for="bridge">Мост дьявола</label></p>
-          <p class="sights__text"><input class="sights__btn" type="checkbox" id="mountain" name="mountain" checked>
-              <label class="sights__name" for="mountain">Гора-Колокол</label></p>
-          <p class="sights__text"><input class="sights__btn" type="checkbox" id="park" name="park" checked>
-              <label class="sights__name" for="park">Слайд-парк</label></p>
-          <p class="sights__text"><input class="sights__btn" type="checkbox" id="redrocks" name="redrocks">
-              <label class="sights__name" for="redrocks">Красные скалы</label></p>
-        </fieldset>
+          <p class="sights__text"><input class="visually-hidden" type="checkbox" id="bridge" name="bridge" checked>
+            <img class="sights__image" src="img/icon-tick.svg" alt="#">
+            <label class="sights__name" for="bridge">Мост дьявола</label></p>
+          <p class="sights__text"><input class="visually-hidden" type="checkbox" id="mountain" name="mountain" checked>
+            <img class="sights__image" src="img/icon-tick.svg" alt="#">
+            <label class="sights__name" for="mountain">Гора-Колокол</label></p>
+          <p class="sights__text"><input class="visually-hidden" type="checkbox" id="park" name="park" checked>
+            <img class="sights__image" src="img/icon-tick.svg" alt="#">
+            <label class="sights__name" for="park">Слайд-парк</label></p>
+            <div class="sights-wrapper">
+                <svg viewBox="0 0 30 30" class="sights-box">
+                      <g>
+                        <rect x="0" y="0" r="15" width="30" height="30"  fill="#f2f2f2"/>
+                      </g>
+                </svg>
+          <p class="sights__text"><input class="visually-hidden" type="checkbox" id="redrocks" name="redrocks">
+            <label class="sights__name" for="redrocks">Красные скалы</label></p>
+            </div>
+          </fieldset>
         <fieldset class="form__item emotions">
           <legend class="emotions__title">Опишите свои эмоции:</legend>
           <p class="emotions__text"><label class="emotions__info" for="emotions"></label></p>
